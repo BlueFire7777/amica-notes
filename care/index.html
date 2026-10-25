@@ -32,8 +32,8 @@
     --amber: #f2c063;
     --teal: #3d6874;
     --sage: #8fb59a;
-    --cream: #fcf6e6;
-    --cream-line: #ead5a0;
+    --cream: #faf8f3;
+    --cream-line: #e6dfcd;
     --radius-corner: 22px;
   }
   * { box-sizing: border-box; }
@@ -136,7 +136,20 @@
   .gem-amber { --gem: var(--amber); }
   .gem-sage { --gem: var(--sage); }
 
-  .about p { color: var(--ink-soft); font-size: 15px; line-height: 2; }
+  .concept { margin: 34px 0 0; text-align: center; }
+  .concept .concept__title {
+    display: block;
+    margin: 0 0 12px;
+    font-family: "Shippori Mincho", serif; font-weight: 600;
+    font-size: 16px; letter-spacing: .14em; color: var(--ink);
+  }
+  .concept p {
+    margin: 0;
+    font-family: "Shippori Mincho", serif; font-weight: 500;
+    font-size: 14.5px; line-height: 2.2; letter-spacing: .06em; color: #45484d;
+  }
+  .concept .concept__title::before { display: none; }
+  .concept .ib { display: inline-block; }
 
   /* いちばん大切なセクション */
   .important {
@@ -154,8 +167,7 @@
   .important h2 { justify-content: center; text-align: center; margin-bottom: 16px; }
   .important h2::before { display: none; }
   .illust { display: block; height: auto; margin: 0 auto; }
-  .illust--family { width: 190px; margin-bottom: 10px; }
-  .illust--keep { width: min(300px, 100%); margin: 14px auto 16px; }
+  .illust--keep { width: min(280px, 100%); margin: 0 auto 12px; }
   .key {
     margin: 16px 0;
     padding: 12px 14px;
@@ -164,7 +176,7 @@
     border-radius: 4px 8px 8px 4px;
     font-weight: 700; line-height: 1.8;
   }
-  .key strong { background: linear-gradient(transparent 62%, rgba(242, 192, 99, .55) 62%); }
+  .key strong { background: linear-gradient(transparent 64%, rgba(242, 192, 99, .32) 64%); }
   .after { margin-top: 6px; padding-top: 14px; border-top: 1px dashed var(--cream-line); }
 
   ul.notes { list-style: none; margin: 0; padding: 0; }
@@ -217,6 +229,18 @@
       <img class="brand__tagline" src="../assets/tagline.svg" alt="Wire Jewelry" width="104" height="19">
     </header>
 
+    <section class="concept">
+      <h2 class="concept__title">amicaについて</h2>
+      <p>
+        友達のようにそっと寄り添う、<br>
+        <span class="ib">天然石の</span><span class="ib">ワイヤージュエリーを</span><span class="ib">お届けしています。</span><br>
+        石の奥に秘められた、<br>
+        個性や小さな魅力を感じながら、<br>
+        あなたの毎日に、そっと寄り添う<br>
+        <span class="ib">お友達のような</span><span class="ib">存在になれますように。</span>
+      </p>
+    </section>
+
     <div class="ornament" aria-hidden="true"><span></span></div>
 
     <p class="title">
@@ -237,20 +261,13 @@
       <li><a href="#repair">修理・お直しについて</a></li>
     </ul>
 
-    <section class="about">
-      <h2>amicaについて</h2>
-      <p>amicaは、天然石のワイヤージュエリーをお届けしています。<br>
-      天然石の奥に秘められた個性や小さな魅力を感じながら、あなたの毎日にそっと寄り添う、お友達のような存在になれますように。</p>
-    </section>
-
     <section id="family" class="important">
-      <img class="illust illust--family" src="../assets/illust-family.png" alt="赤ちゃんと子犬、子猫のイラスト" width="190" height="137">
+      <img class="illust illust--keep" src="../assets/illust-keep-away.png" alt="テーブルの上のアクセサリーに手を伸ばす赤ちゃんを、大人の手がそっと止めているイラスト。そばで子犬と猫が見ている" width="280" height="221">
       <span class="important__badge en">Important</span>
       <h2>大切なお子さま・ペットの<br>いるご家庭へ</h2>
       <p>天然石・ワイヤー・金具など、小さな部品を使用しています。部品が外れた場合、誤飲や思わぬけがにつながるおそれがあります。</p>
       <p class="key"><strong>必ず、お子さまやペットの手の届かない場所に保管してください。</strong></p>
       <p>特にご使用後は、床やテーブルなどに置いたままにせず、専用の袋やケースに入れて保管してください。</p>
-      <img class="illust illust--keep" src="../assets/illust-keep-away.png" alt="テーブルの上のアクセサリーに手を伸ばす赤ちゃんを、大人の手がそっと止めているイラスト。そばで子犬と猫が見ている" width="300" height="237">
       <div class="after">
         <p>万が一、部品が外れたり破損したりした場合は、ご使用を中止し、お子さまやペットが触れない場所に保管してください。</p>
         <p>誤って飲み込んだおそれがある場合は、すぐに医師または獣医師にご相談ください。</p>
