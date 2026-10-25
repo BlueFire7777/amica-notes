@@ -136,19 +136,12 @@
   .gem-amber { --gem: var(--amber); }
   .gem-sage { --gem: var(--sage); }
 
-  .concept { margin: 34px 0 0; text-align: center; }
-  .concept .concept__title {
-    display: block;
-    margin: 0 0 12px;
-    font-family: "Shippori Mincho", serif; font-weight: 600;
-    font-size: 16px; letter-spacing: .14em; color: var(--ink);
-  }
+  .concept { margin: 30px 0 0; text-align: center; }
   .concept p {
     margin: 0;
     font-family: "Shippori Mincho", serif; font-weight: 500;
     font-size: 14.5px; line-height: 2.2; letter-spacing: .06em; color: #45484d;
   }
-  .concept .concept__title::before { display: none; }
   .concept .ib { display: inline-block; }
 
   /* いちばん大切なセクション */
@@ -229,8 +222,7 @@
       <img class="brand__tagline" src="../assets/tagline.svg" alt="Wire Jewelry" width="104" height="19">
     </header>
 
-    <section class="concept">
-      <h2 class="concept__title">amicaについて</h2>
+    <section class="concept" aria-label="amicaについて">
       <p>
         友達のようにそっと寄り添う、<br>
         <span class="ib">天然石の</span><span class="ib">ワイヤージュエリーを</span><span class="ib">お届けしています。</span><br>
