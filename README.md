@@ -3,7 +3,8 @@
 amica（Wire Jewelry）の「お取り扱いとご注意（Care Guide）」ページ。
 Care Guide カードの QR コードからリンクされる。
 
-- ページ本体: `care/index.html`（公開 URL の `/care/`）
+- 公開 URL: https://amica.love/care/ （カードの QR の中身。`CNAME` ファイルで独自ドメインを設定）
+- ページ本体: `care/index.html`
 - ルートの `index.html` は `/care/` への転送のみ（将来トップページを作る場合はここを差し替える）
 - ホスティング: GitHub Pages（main ブランチ / root）
 
@@ -29,12 +30,12 @@ push すると 1〜2 分で反映される。URL は変わらないので、カ�
 - `care/` のパスを変える
 - 独自ドメインの更新を止める（自動更新をオンにしておく）
 
-## 独自ドメインの設定
+## 独自ドメインの設定（amica.love / Wix で取得、DNS は Wix で管理）
 
 1. ドメインの DNS に GitHub Pages を設定
-   - ルートドメイン（例 `example.com`）: A レコード 4 つ
+   - ルートドメイン: A レコード 4 つ
      `185.199.108.153` / `185.199.109.153` / `185.199.110.153` / `185.199.111.153`
    - `www`: CNAME → `bluefire7777.github.io`
-2. リポジトリの Settings → Pages → Custom domain にドメインを入力 → Enforce HTTPS をオン
-3. `care/index.html` の `og:url` / `og:image` を新ドメインに書き換える
-4. QR は `https://<ドメイン>/care/` で作り直す
+2. リポジトリ直下の `CNAME` ファイルにドメインを書く（設定済み）→ Settings → Pages で Enforce HTTPS をオン
+3. `care/index.html` の `og:url` / `og:image` を新ドメインに合わせる（設定済み）
+4. QR は `https://amica.love/care/`（作成済み）
